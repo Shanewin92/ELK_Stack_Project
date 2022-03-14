@@ -32,7 +32,7 @@ Only the Jumpbox machine can accept connections from the Internet. Access to thi
  
 Machines within the network can only be accessed by Jumpbox.
 - Only the Jumpbox has access to the ELKvm via port 22
-- Only a PC with the public IP of 142.1219.168.120 on port 5602 with a   web browser.
+- Only the host machine with the public IP of 142.1219.168.120 on port 5602 with a web browser.
 A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
@@ -65,11 +65,11 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat-config.yml to /etc/ansible/files/Filebeat-config.yml.
 - Update the filebeat-config.yml file to include
-  - username and password
-  - host IP and port for ELKvm
+  - Username and password
+  - Host IP and port for ELKvm
 - Run the playbook, and navigate to the http://20.114.236.27:5601/ to check that the installation worked as expected.
-  - navigate to the Filebeat installation and Metricbeat installation page on the ELK server GUI.
+  - Navigate to the Filebeat installation and Metricbeat installation page on the ELK server GUI.
   - Verify that step 5: Module Status and click Check Data.
 - Filebeat-playbook.yml is the playbook. Copy it to /etc/ansible/roles
-- update the hosts file to indicate which machine to install the ELK server.
+- Update the hosts file to indicate which machine to install the ELK server.
 - Navigate to http://20.114.236.27:5601/ in order to check that the ELK server is running.
