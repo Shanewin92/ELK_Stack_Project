@@ -20,7 +20,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 Filebeat will monitor the changes to the files on the server and metricbeat will provide information about system resources and performances.
 The configuration details of each machine may be found below.
 | Name     | Function | IP Address | Operating System  |
-|----------|----------|------------|-------------------|
+|----------|----------|:------------:|-------------------:|
 | Jump Box | Gateway  | 10.0.0.4   |Linux (Ubuntu 20.04|
 | Web-1    | Webserver| 10.0.0.5   |Linux (Ubuntu 20.04|
 | Web-2    | Webserver| 10.0.0.6   |Linux (Ubuntu 20.04) |
